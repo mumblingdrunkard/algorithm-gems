@@ -1,0 +1,7 @@
+= algorithm-gems
+mumblingdrunkard, <mumblingdrunkard@pm.me>
+
+This is a collection of code and other resources related to my series on
+algorithms. The implementation language will vary between projects.
+
+Open a project for more information.
