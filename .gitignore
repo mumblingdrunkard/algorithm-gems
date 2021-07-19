@@ -5,6 +5,12 @@
 !Makefile
 !*/
 
+# documents
+!*.md
+!*.asciidoc
+!*.adoc
+!*.ad
+
 # c++
 !*.cxx
 
