@@ -5,6 +5,8 @@ aryang_adm
 :editorial: https://discuss.codechef.com/problems/CHEFQUER
 :stem:
 
+== Problem Text
+
 Problem from codechef: https://www.codechef.com/START5C/problems/CHEFQUER
 
 You are given a sequence stem:[A_1, A_2, ..., A_N].
@@ -14,17 +16,17 @@ There are two types of queries:
 - `1 L R X`: for each stem:[i, (L \leq i \leq R)], add stem:[(X + i - L)^2] to stem:[A_i]
 - `2 Y`: find the current value of stem:[A_Y]
 
-== Input
+=== Input
 
 - The first line of the input contains two space-separated integers stem:[N] and stem:[Q].
 - The second line contains stem:[N] space-separated integers stem:[A_1, A_2, ..., A_N].
 - stem:[Q] lines follow. Each of these lines describes a query in the format described above.
 
-== Output
+=== Output
 
 For each query of the second type, print a single line containing one integer stem:[A_Y].
 
-== Constraints
+=== Constraints
 
 - stem:[1 \leq N, Q \leq 10^5]
 - stem:[0 \leq |A_i| \leq 10^6] for each valid stem:[i]
@@ -32,7 +34,7 @@ For each query of the second type, print a single line containing one integer st
 - stem:[0 \leq |X| \leq 10^6]
 - stem:[1 \leq Y \leq N]
 
-== Example Input
+=== Example Input
 
 [source]
 ----
@@ -44,7 +46,7 @@ For each query of the second type, print a single line containing one integer st
 2 5
 ----
 
-== Example Output
+=== Example Output
 
 [source]
 ----
@@ -52,7 +54,7 @@ For each query of the second type, print a single line containing one integer st
 69
 ----
 
-== Explanation
+=== Explanation
 
 - the sequence after the first query is
 +

@@ -1,0 +1,17 @@
+*
+
+# common
+!.gitignore
+!Makefile
+!*/
+
+# c++
+!*.cxx
+
+# c
+!*.c
+
+# rust
+!*.rs
+!*.toml
+!*.lock
