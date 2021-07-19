@@ -27,10 +27,10 @@ For each query of the second type, print a single line containing one integer A[
 
 === Constraints
 
-- 1 ≤ N, Q ≤ 10^5
-- 0 ≤ |A[i]| ≤ 10^6 for each valid i
+- 1 ≤ N, Q ≤ 10⁵
+- 0 ≤ |A[i]| ≤ 10⁶ for each valid i
 - 1 ≤ L ≤ R ≤ N
-- 0 ≤ |X| ≤ 10^6
+- 0 ≤ |X| ≤ 10⁶
 - 1 ≤ Y ≤ N
 
 === Example Input
@@ -55,10 +55,10 @@ For each query of the second type, print a single line containing one integer A[
 
 === Explanation
 
-- the sequence after the first query is [1 + 5^2, 10 + (5 + 2 - 1)^2, 3 + (5 + 3 - 1)^2, 6, 5] = [26, 46, 52, 6, 5]
+- the sequence after the first query is [1 + 5², 10 + (5 + 2 - 1)², 3 + (5 + 3 - 1)², 6, 5] = [26, 46, 52, 6, 5]
 
 - the second query asks for A[3], which is 52
 
-- the sequence after the third query is [26, 46, 52, 6 + 7^2, 5 + (7 + 1)^2] = [26, 46, 52, 55, 69]
+- the sequence after the third query is [26, 46, 52, 6 + 7², 5 + (7 + 1)²] = [26, 46, 52, 55, 69]
 
 - the second query asks for A[5], which is 69
