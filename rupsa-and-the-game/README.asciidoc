@@ -1,0 +1,103 @@
+= Rupsa and the Game
+:site: https://www.codechef.com/problems/RGAME
+
+== Problem Text
+
+NOTE: This problem comes from CodeChef: https://www.codechef.com/problems/RGAME
+
+Princess Rupsa saw one of her friends playing a special game. The game goes as
+follows:
+
+- *N + 1* numbers occur sequentially (one at a time) from *A~0~* to *A~N~*.
+
+- You must write the numbers on a sheet of paper, such that *A~0~* is written
+  first. The other numbers are written according to an inductive rule -- after
+  *A~i-1~* numbers have been written in a row, then *A~i~* can be
+  written at either end of the row. That is, you first write *A~0~*, and then
+  *A~1~* can be written on its left or right to make *A~0~A~1~* or
+  *A~1~A~0~*, and so on.
+
+- *A~i~* must be written before writing *A~j~*, for every *i < j*.
+
+- For a move in which you write a number *A~i~, (i > 0)*, your points increase
+  by the product of *A~i~* and its neighbour. (Note that for any move it will
+  have only one neighbour as you write the number at an end.)
+
+- Total score of a game is the score you attain after placing all the *N + 1*
+  numbers.
+
+Princess Rupsa wants to find out the sum of scores obtained by all possible
+different gameplays. Two gameplays are different, if after writing down all
+*N + 1* numbers, when we read from left to right, there exists some position
+*i*, at which the gameplays have *A~j~* and *A~k~* written at the *i^th^*
+position such that *j ≠ k*. But since she has recently found her true love, a
+frog Prince, and is in a hurry to meet him, you must help her solve the problem
+as fast as possible. Since the answer can be very large, print the answer modulo
+*10^9^ + 7*.
+
+=== Input
+
+- The first line of the input contains an integer *T* denoting the number of
+  test cases.
+
+- The first line of each test case contains a single integer *N*.
+
+- The second line contains *N + 1* space separated integers denoting *A~0~* to
+  *A~N~*.
+
+=== Output
+
+- For each test case, output a single line containing an integer denoting the
+  answer.
+
+=== Constraints
+
+- *1 ≤ T ≤ 10*
+- *1 ≤ N ≤ 10^5^*
+- *1 ≤ A~i~ ≤ 10^9^*
+
+=== Sub-Tasks
+
+- Subtask #1: *1 ≤ N ≤ 10* (10 points)
+- Subtask #2: *1 ≤ N ≤ 1000* (20 points)
+- Subtask #3: *Original constraints* (70 points)
+
+=== Example
+
+[source]
+----
+Input:
+2
+1
+1 2
+2
+1 2 1
+
+Output:
+4
+14
+----
+
+=== Explanation of Example
+
+.First test case
+====
+There are *2* possible gameplays:
+
+- *A~0~A~1~*, which gives a score of *2*,
+- and *A~1~A~0~*, which gives a score of *2*.
+
+Adding together the score for all possible gameplays gives *2 + 2 = 4*.
+====
+
+.Second test case
+====
+There are a total of *4* possible gameplays:
+
+- *A~0~A~1~A~2~* which gives a score of *4*,
+- *A~1~A~0~A~2~* which gives a score of *3*,
+- *A~2~A~0~A~1~* which gives a score of *3*,
+- and *A~2~A~1~A~0~* which gives a score of *4*.
+
+Adding together the score for all possible gameplays gives *4 + 3 + 3 + 4 = 14*.
+====
