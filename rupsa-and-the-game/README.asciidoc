@@ -78,20 +78,17 @@ Output:
 14
 ----
 
-=== Explanation of Example
+==== Explanation of the First Test Case
 
-.First test case
-====
 There are *2* possible gameplays:
 
 - *A~0~A~1~*, which gives a score of *2*,
 - and *A~1~A~0~*, which gives a score of *2*.
 
 Adding together the score for all possible gameplays gives *2 + 2 = 4*.
-====
 
-.Second test case
-====
+==== Explanation of the Second Test Case
+
 There are a total of *4* possible gameplays:
 
 - *A~0~A~1~A~2~* which gives a score of *4*,
@@ -100,4 +97,3 @@ There are a total of *4* possible gameplays:
 - and *A~2~A~1~A~0~* which gives a score of *4*.
 
 Adding together the score for all possible gameplays gives *4 + 3 + 3 + 4 = 14*.
-====
