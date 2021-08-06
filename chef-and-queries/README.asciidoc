@@ -8,29 +8,29 @@ aryang_adm
 
 Problem from codechef: https://www.codechef.com/START5C/problems/CHEFQUER
 
-You are given a sequence _A_[1], _A_[2], ..., _A_[_N_].
+You are given a sequence _A_\ ［1］, _A_\ ［2］, ..., _A_ ［\ _N_\ ］.
 Chef wants you to handle _Q_ queries.
 There are two types of queries:
 
-- `1 L R X`: for each _i_, (_L_ ≤ _i_ ≤ _R_), add (_X_ + _i_ - _L_)² to _A_[_i_]
-- `2 Y`: find the current value of _A_[_Y_]
+- `1 L R X`: for each _i_, （\ _L_ ≤ _i_ ≤ _R_\ ）, add （\ _X_ + _i_ - _L_\ ）² to _A_\ ［\ _i_\ ］
+- `2 Y`: find the current value of _A_\ ［\ _Y_\ ］
 
 === Input
 
 - The first line of the input contains two space-separated integers _N_ and _Q_.
-- The second line contains _N_ space-separated integers _A_[1], _A_[2], ..., _A_[_N_].
+- The second line contains _N_ space-separated integers _A_\ ［1］, _A_\ ［2］, ..., _A_\ ［\ _N_\ ］.
 - _Q_ lines follow. Each of these lines describes a query in the format described above.
 
 === Output
 
-For each query of the second type, print a single line containing one integer _A_[_Y_].
+For each query of the second type, print a single line containing one integer _A_\ ［\ _Y_\ ］.
 
 === Constraints
 
 - 1 ≤ _N_, _Q_ ≤ 10⁵
-- 0 ≤ |A[_i_]| ≤ 10⁶ for each valid _i_
+- 0 ≤ ⎸\ _A_\ ［\ _i_\ ］⎹ ≤ 10⁶ for each valid _i_
 - 1 ≤ _L_ ≤ _R_ ≤ _N_
-- 0 ≤ |_X_| ≤ 10⁶
+- 0 ≤ ⎸\ _X_\ ⎹ ≤ 10⁶
 - 1 ≤ _Y_ ≤ _N_
 
 === Example Input
@@ -55,10 +55,10 @@ For each query of the second type, print a single line containing one integer _A
 
 === Explanation
 
-- the sequence after the first query is [1 + 5², 10 + (5 + 2 - 1)², 3 + (5 + 3 - 1)², 6, 5] = [26, 46, 52, 6, 5]
+- the sequence after the first query is ［1 + 5², 10 + （5 + 2 - 1）², 3 + （5 + 3 - 1）², 6, 5］ = ［26, 46, 52, 6, 5］
 
-- the second query asks for _A_[3], which is 52
+- the second query asks for _A_\ ［3］, which is 52
 
-- the sequence after the third query is [26, 46, 52, 6 + 7², 5 + (7 + 1)²] = [26, 46, 52, 55, 69]
+- the sequence after the third query is ［26, 46, 52, 6 + 7², 5 + （7 + 1）²］ = ［26, 46, 52, 55, 69］
 
-- the second query asks for _A_[5], which is 69
+- the second query asks for _A_\ ［5］, which is 69
