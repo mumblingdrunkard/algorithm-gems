@@ -1,3 +1,20 @@
+/*
+ * Solution for https://www.codechef.com/problems/RGAME
+ * Copyright 2021 mumblingdrunkard
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 #include <iostream>
 #include <vector>
 
@@ -23,7 +40,7 @@ int main() {
     size_t T;      // declare T
     std::cin >> T; // read T
 
-    for (auto t = 0; t < T; ++t) {        // for T testcases
+    for (auto t = 0; t < T; ++t) {      // for T testcases
         size_t N;                           // declare N
         std::cin >> N;                      // read N
         std::vector<uint64_t> A(N + 1);     // create vector of N + 1 elements
