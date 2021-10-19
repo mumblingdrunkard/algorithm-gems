@@ -1,3 +1,11 @@
+////
+This is an asciidoc file, it is likely best viewed with something like
+AsciiDoctor.js
+
+This version of the problem text is not viewable on GitHub. The one found
+in `README.asciidoc` is.
+////
+
 = Chef and Queries
 aryang_adm
 :author: aryanag_adm

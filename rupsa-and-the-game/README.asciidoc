@@ -1,3 +1,8 @@
+////
+This is an asciidoc file, it is likely best viewed with something like
+AsciiDoctor.js
+////
+
 = Rupsa and the Game
 :site: https://www.codechef.com/problems/RGAME
 
